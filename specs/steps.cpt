@@ -1,0 +1,48 @@
+This is a concept file with following syntax for each concept.
+
+
+# Alışverişe Başla Seçeneği Seçilir
+* "2" saniye bekle
+* Açılış Sayfası Kontrolü İşlemi
+* "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" İd'li elemente tıkla
+* "1" saniye bekle
+* Alışveriş sayfası doğrulama işlemi
+* "com.ozdilek.ozdilekteyim:id/nav_categories" İd'li elemente tıkla
+* "1" saniye bekle
+* Kategori Sayfası Kontrolü İşlemi
+
+# Kadın Kategorisinde Pantolon Sayfasına Gidilir
+* "//android.widget.RelativeLayout[@index=1]" xpath'li elemente tıkla
+* "1" saniye bekle
+* "//android.widget.TextView[@text='Pantolon']" xpath'li elemente tıkla
+* "1" saniye bekle
+
+# İkidefa Scroll Edilir ve Rastgele Bir Ürün Seçilir
+* sayfa boyunca scroll et
+* "1" saniye bekle
+* sayfa boyunca scroll et
+* "1" saniye bekle
+* "//android.widget.ImageView[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" xpath'te bulunan sayfada görünen tüm ürünleri bul ve rastgele bir ürüne tıkla
+* "1" saniye bekle
+* Product detail sayfası doğrulama işlemi
+* "com.ozdilek.ozdilekteyim:id/imgFav" İd'li elemente tıkla
+
+# Login Sayfasında Giriş İşlemleri Gerçekleştirilir
+* Login page doğrulama işlemi
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/etEposta" İd'li elemente "borayedek34@gmail.com" değerini yaz
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/etPassword" İd'li elemente "Test12345" değerini yaz
+* "1" saniye bekle
+
+# İkidefa Scroll Edilir ve Geriye Gidilir
+* "com.ozdilek.ozdilekteyim:id/ivBack" İd'li elemente tıkla
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/ivBack" İd'li elemente tıkla
+* "1" saniye bekle
+
+# Rastgele Bir Ürün Seçilir ve Sepete Eklenir
+* "//android.widget.ImageView[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" xpath'te bulunan sayfada görünen tüm ürünleri bul ve rastgele bir ürüne tıkla
+* "1" saniye bekle
+* Sepete ekle
+* "3" saniye bekle
