@@ -10,14 +10,12 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import static java.lang.Thread.sleep;
 
 public class StepImplementation extends BaseTest {
 
